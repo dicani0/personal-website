@@ -9,7 +9,7 @@ import ContactSection from "./components/ContactSection.vue";
 </script>
 
 <template>
-<!--  <Navbar/>-->
+  <Navbar/>
   <main class="bg-neutral-950">
     <div id="home">
       <HomeSection/>
