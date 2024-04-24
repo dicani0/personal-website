@@ -2,7 +2,6 @@
 </script>
 
 <template>
-  <h1>Skills</h1>
   <div class="container mx-auto px-4 h-screen flex flex-col justify-center">
     
   </div>
