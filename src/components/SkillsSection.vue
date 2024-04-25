@@ -7,7 +7,7 @@ import SectionHeading from "./SectionHeading.vue";
 </script>
 
 <template>
-  <div class="container mx-auto px-4 min-h-[1200px] h-screen flex flex-col justify-center">
+  <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
     <section class="py-12 min-h-[800px]">
       <div class="container mx-auto px-4">
         <SectionHeading>Technical Skills</SectionHeading>

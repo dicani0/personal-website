@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading.vue";
 </script>
 
 <template>
-  <div class="container mx-auto px-4 min-h-[1200px] h-screen flex flex-col justify-center">
+  <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
     <section class="md:shadow-lg lg:shadow-xl shadow-rose-950 md:shadow-rose-950 lg:shadow-rose-950 py-8 md:rounded-3xl lg:rounded-full overflow-hidden">
       <div class="md:flex md:items-center justify-center relative bg-neutral-950">
         <div class="md:w-2/3 md:mt-0 md:pl-6 text-gray-400">

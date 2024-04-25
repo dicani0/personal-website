@@ -4,8 +4,8 @@ import SectionHeading from "./SectionHeading.vue";
 </script>
 
 <template>
-  <section class="py-12 pt-16">
-    <div class="container mx-auto px-4">
+  <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
+    <section class="py-12">
       <SectionHeading>Professional Experience</SectionHeading>
       <div class="space-y-8">
         <ExperienceItem
@@ -54,8 +54,8 @@ import SectionHeading from "./SectionHeading.vue";
         />
 
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <style scoped>

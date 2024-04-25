@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="container mx-auto px-4 min-h-[800px] h-screen flex flex-col justify-center">
+  <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
     <section class="text-center space-y-4 py-10">
       <div class="w-60 h-60 bg-neutral-900 opacity-80 mx-auto flex rounded-full items-center bg-neutral-900 border-2 border-rose-900">
         <img src="@/assets/profile.webp" alt="Your Name" class="mx-auto w-48 h-48 object-cover rounded-full">
