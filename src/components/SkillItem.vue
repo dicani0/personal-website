@@ -11,9 +11,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 px-4 mb-8">
-    <div class="text-center">
-      <div class="text-2xl text-gray-800 font-semibold mb-2">{{ title }}</div>
+  <div class="px-4 mb-8">
+    <div class="text-center relative bg-neutral-950">
+      <div class="text-2xl text-gray-500 font-semibold mb-2">{{ title }}</div>
       <FontAwesomeIcon :icon="icon" :class="classString"/>
     </div>
   </div>

@@ -1,11 +1,12 @@
 <script setup>
 import ExperienceItem from "./ExperienceItem.vue";
+import SectionHeading from "./SectionHeading.vue";
 </script>
 
 <template>
   <section class="py-12 pt-16">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Professional Experience</h2>
+      <SectionHeading>Professional Experience</SectionHeading>
       <div class="space-y-8">
         <ExperienceItem
             position="Backend Developer"

@@ -1,18 +1,20 @@
 <script setup>
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import {faPhp, faVuejs, faHtml5, faCss3Alt, faJs, faDocker, faGitAlt, faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faPhp, faVuejs, faHtml5, faCss3Alt, faJs, faDocker, faGitAlt, faGithub, faLaravel} from "@fortawesome/free-brands-svg-icons";
 import {faDatabase, faCode} from "@fortawesome/free-solid-svg-icons";
 import SkillItem from "./SkillItem.vue";
+import SectionHeading from "./SectionHeading.vue";
 </script>
 
 <template>
-  <div class="container mx-auto px-4 min-h-[1000px] h-screen flex flex-col justify-center">
+  <div class="container mx-auto px-4 min-h-[1200px] h-screen flex flex-col justify-center">
     <section class="py-12 min-h-[800px]">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Technical Skills</h2>
-        <div class="flex flex-wrap justify-center text-gray-600">
+        <SectionHeading>Technical Skills</SectionHeading>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-gray-600 place-items-center">
 
-          <SkillItem title="PHP & Laravel" :icon="faPhp" class-string="text-6xl text-blue-500 mb-4"/>
+          <SkillItem title="PHP" :icon="faPhp" class-string="text-6xl text-blue-500 mb-4"/>
+          <SkillItem title="Laravel" :icon="faLaravel" class-string="text-6xl text-orange-500 mb-4"/>
           <SkillItem title="Vue.js" :icon="faVuejs" class-string="text-6xl text-green-500 mb-4"/>
           <SkillItem title="HTML" :icon="faHtml5" class-string="text-6xl text-orange-500 mb-4"/>
           <SkillItem title="CSS" :icon="faCss3Alt" class-string="text-6xl text-blue-400 mb-4"/>

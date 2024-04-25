@@ -1,12 +1,13 @@
 <script setup>
+import SectionHeading from "./SectionHeading.vue";
 </script>
 
 <template>
-  <div class="container mx-auto px-4 min-h-[1000px] h-screen flex flex-col justify-center">
+  <div class="container mx-auto px-4 min-h-[1200px] h-screen flex flex-col justify-center">
     <section class="md:shadow-lg lg:shadow-xl shadow-rose-950 md:shadow-rose-950 lg:shadow-rose-950 py-8 md:rounded-3xl lg:rounded-full overflow-hidden">
-      <div class="md:flex md:items-center justify-center">
-        <div class="md:w-2/3 md:mt-0 md:pl-6 text-gray-700">
-          <h2 class="text-4xl font-bold text-gray-800 text-center">About Me</h2>
+      <div class="md:flex md:items-center justify-center relative bg-neutral-950">
+        <div class="md:w-2/3 md:mt-0 md:pl-6 text-gray-400">
+          <SectionHeading>About Me</SectionHeading>
           <p class="mt-6">
             Hello! I'm a dedicated <strong>Backend Developer</strong> with over three years of experience specializing in <strong>PHP</strong> and <strong>Laravel</strong>. I'm passionate about building robust software solutions and am always eager to learn new technologies. I earned my Bachelor of Engineering from Uniwersytet Kaliski im. Prezydenta Stanisława Wojciechowskiego, where I honed my technical skills and developed a solid foundation in software development.
           </p>

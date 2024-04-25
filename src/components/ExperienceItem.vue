@@ -9,10 +9,10 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-neutral-900 p-6 rounded-lg shadow-xl relative ring ring-rose-900 p-16 shadow-rose-950">
-    <h3 class="text-xl font-bold text-gray-300">{{ position }} - {{ company }}</h3>
-    <p class="text-gray-400">{{ date }}</p>
-    <ul class="list-disc list-inside text-gray-500 mt-4">
+  <div class="bg-neutral-900 p-6 rounded-lg relative ring ring-rose-900 p-16">
+    <h3 class="text-xl font-bold text-gray-200">{{ position }} - {{ company }}</h3>
+    <p class="text-gray-300">{{ date }}</p>
+    <ul class="list-disc list-inside text-gray-400 mt-4">
       <li v-for="point in points" :key="point">{{ point }}</li>
     </ul>
     <div class="mt-4">

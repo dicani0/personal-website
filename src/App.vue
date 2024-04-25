@@ -11,8 +11,8 @@ import FloatingParticles from "./components/FloatingParticles.vue";
 
 <template>
   <Navbar/>
-  <FloatingParticles/>
-  <main class="bg-neutral-950 cursor-pointer">
+  <main class="bg-neutral-950 flex flex-col">
+    <FloatingParticles/>
     <div id="home">
       <HomeSection/>
     </div>

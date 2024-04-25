@@ -30,8 +30,8 @@ import {onMounted, ref} from "vue";
 </script>
 
 <template>
-  <div class="fixed inset-0 pointer-events-none z-0">
-    <div v-for="particle in particles" :key="particle.id" :style="particle.style" class="particle" style="z-index: inherit"></div>
+  <div class="fixed inset-0 pointer-events-none">
+    <div v-for="particle in particles" :key="particle.id" :style="particle.style" class="particle" style="z-index: -1"></div>
   </div>
 </template>
 
