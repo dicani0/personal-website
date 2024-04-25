@@ -6,11 +6,13 @@ import SkillsSection from "./components/SkillsSection.vue";
 import ExperienceSection from "./components/ExperienceSection.vue";
 import ProjectsSection from "./components/ProjectsSection.vue";
 import ContactSection from "./components/ContactSection.vue";
+import FloatingParticles from "./components/FloatingParticles.vue";
 </script>
 
 <template>
   <Navbar/>
-  <main class="bg-neutral-950">
+  <FloatingParticles/>
+  <main class="bg-neutral-950 cursor-pointer">
     <div id="home">
       <HomeSection/>
     </div>

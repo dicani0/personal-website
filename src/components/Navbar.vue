@@ -13,7 +13,7 @@ const sections = [
 </script>
 
 <template>
-  <nav class="sticky top-0 bg-rose-950">
+  <nav class="sticky top-0 bg-rose-950 opacity-80">
     <div class="container mx-auto px-4 py-4">
       <ul class="flex flex-row gap-4 justify-between">
         <NavbarItem v-for="section in sections" :key="section.type" :type="section.type" :title="section.title"
