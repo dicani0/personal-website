@@ -21,8 +21,8 @@ import {onMounted, ref} from "vue";
           animationDuration: animationDuration,
           animationTimingFunction: 'linear',
           animationIterationCount: 'infinite',
-          backgroundColor: 'rgba(255, 255, 255, 0.5)',
-          boxShadow: '0 0 10px rgba(255, 255, 255, 0.5)'
+          backgroundColor: 'rgba(76, 5, 25, 0.3)',
+          boxShadow: '0 0 10px rgba(255, 0, 255, 0.1)',
         }
       });
     }
@@ -30,8 +30,8 @@ import {onMounted, ref} from "vue";
 </script>
 
 <template>
-  <div class="fixed inset-0 pointer-events-none">
-    <div v-for="particle in particles" :key="particle.id" :style="particle.style" class="particle"></div>
+  <div class="fixed inset-0 pointer-events-none z-0">
+    <div v-for="particle in particles" :key="particle.id" :style="particle.style" class="particle" style="z-index: inherit"></div>
   </div>
 </template>
 
