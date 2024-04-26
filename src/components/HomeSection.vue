@@ -4,7 +4,7 @@
 <template>
   <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
     <section class="text-center space-y-4 py-10">
-      <div class="w-60 h-60 bg-neutral-900 opacity-80 mx-auto flex rounded-full items-center bg-neutral-900 border-2 border-rose-900">
+      <div class="w-60 h-60 bg-neutral-900 opacity-80 mx-auto flex rounded-full items-center bg-neutral-900 border-2 border-rose-900 ring">
         <img src="@/assets/profile.webp" alt="Your Name" class="mx-auto w-48 h-48 object-cover rounded-full">
       </div>
       <h1 class="text-4xl font-bold text-gray-200 relative bg-neutral-350">Hello, I'm Dawid!</h1>
@@ -31,5 +31,18 @@
 </template>
 
 <style scoped>
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgb(136, 19, 55);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(136, 19, 55, 0);
+  }
+}
 
+.container .ring {
+  animation: pulse 1s infinite;
+  box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out;
+}
 </style>
