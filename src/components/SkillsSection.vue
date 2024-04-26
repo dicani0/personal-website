@@ -1,5 +1,4 @@
 <script setup>
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {faPhp, faVuejs, faHtml5, faCss3Alt, faJs, faDocker, faGitAlt, faGithub, faLaravel} from "@fortawesome/free-brands-svg-icons";
 import {faDatabase, faCode} from "@fortawesome/free-solid-svg-icons";
 import SkillItem from "./SkillItem.vue";
@@ -8,7 +7,7 @@ import SectionHeading from "./SectionHeading.vue";
 
 <template>
   <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
-    <section class="py-12 min-h-[800px]">
+    <section class="py-12">
       <div class="container mx-auto px-4">
         <SectionHeading>Technical Skills</SectionHeading>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 text-gray-600 place-items-center">
