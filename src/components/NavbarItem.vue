@@ -4,11 +4,12 @@ const props = defineProps({
   title: String,
   section: String,
 });
+
 </script>
 
 <template>
   <li>
-    <a :href="props.section" class="flex gap-2">
+    <a :href="props.section" class="flex gap-2 min-w-32">
       <vue-feather :type="props.type"></vue-feather>
       <span>{{ props.title }}</span>
     </a>
