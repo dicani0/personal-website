@@ -5,61 +5,66 @@ import ProjectItem from "./ProjectItem.vue";
 const projects = [
   {
     title: "Game Manager",
-    description: "This is a short description of Project 1.",
+    description: "Application for a game, that allows people to trade items, create characters and manage guilds",
     link: "https://github.com/dicani0/game-manager",
     technologies: [
-      {
-        name: "Laravel",
-        icon: "laravel"
-      },
-      {
-        name: "Vue.js",
-        icon: "vuejs"
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "tailwindcss"
-      }
+      "PHP 8.3",
+      "Laravel",
+      "JavaScript",
+      "TypeScript",
+      "Vue.js",
+      "Inertia",
+      "Vite",
+      "Tailwind CSS",
+      "Pipelines Design Pattern",
+      "MySQL",
+      "Docker",
+      "Websockets",
+      "Laravel Echo",
+      "Larastan",
+      "GitHub Actions",
     ]
   },
   {
     title: "Laravel LMS (WIP)",
-    description: "This is a short description of Project 2.",
+    description: "LMS application for managing courses",
     link: "https://github.com/dicani0/laravel-lms",
     technologies: [
-      {
-        name: "Laravel",
-        icon: "laravel"
-      },
-      {
-        name: "Vue.js",
-        icon: "vuejs"
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "tailwindcss"
-      }
+      "PHP 8.3",
+      "Laravel",
+      "JavaScript",
+      "TypeScript",
+      "Vue.js",
+      "Inertia",
+      "Vite",
+      "Tailwind CSS",
+      "Domain Driven Design",
+      "CQRS",
     ]
   },
   {
     title: "Task Manager (WIP)",
-    description: "This is a short description of Project 3.",
+    description: "Task manager application with user authentication and authorization, that allows users to create, update, delete and list tasks.",
     link: "https://github.com/dicani0/task-manager-backend",
-    technologies: []
+    technologies: [
+      "Node.js",
+      "Express",
+      "TypeScript",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+    ]
   },
   {
     title: "Portfolio Website",
-    description: "This is a short description of Project 4.",
+    description: "My personal website built with Vue.js and Tailwind CSS. Hosted on GitHub Pages.",
     link: "https://dicani0.github.io/personal-website/",
     technologies: [
-      {
-        name: "Vue.js",
-        icon: "vuejs"
-      },
-      {
-        name: "Tailwind CSS",
-        icon: "tailwindcss"
-      }
+      "Vue.js",
+      "JavaScript",
+      "Vite",
+      "Tailwind CSS",
+      "GitHub Pages",
     ]
   }
 ];
@@ -77,6 +82,7 @@ const projects = [
               :title="project.title"
               :description="project.description"
               :link="project.link"
+              :technologies="project.technologies"
           />
         </div>
       </div>
