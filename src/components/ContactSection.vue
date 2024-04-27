@@ -10,6 +10,7 @@ const form = ref({
 });
 
 const message = ref("");
+const result = ref("");
 
 const submitForm = async () => {
   const data = {
@@ -32,27 +33,34 @@ const submitForm = async () => {
     const res = await axios.post("https://formspree.io/f/mpzvkvbw", data);
 
     if (res.status === 200) {
-      message.value = "Message sent successfully! I will get back to you soon.";
       form.value.name = "";
       form.value.email = "";
       form.value.message = "";
 
+      message.value = "Message sent successfully! I will get back to you soon.";
+      result.value = "success";
+
       setTimeout(() => {
         message.value = "";
+        result.value = "";
       }, 5000);
 
     } else {
       message.value = "An error occurred. Please try again later.";
+      result.value = "error";
 
       setTimeout(() => {
         message.value = "";
+        result.value = "";
       }, 5000);
     }
   } catch (e) {
     message.value = "An error occurred. Please try again later.";
+    result.value = "error";
 
     setTimeout(() => {
       message.value = "";
+      result.value = "";
     }, 5000);
   }
 };
@@ -60,7 +68,8 @@ const submitForm = async () => {
 
 <template>
   <transition name="slide-fade">
-    <p class="font-bold text-2xl fixed top-16 inset-x-0 bg-rose-950 p-4 ring-neutral-950 text-rose-300 text-center text-white transition ease-in-out delay-150 z-50"
+    <p class="font-bold text-2xl fixed top-16 inset-x-0 p-4 ring-neutral-950 text-rose-300 text-center text-white transition ease-in-out delay-150 z-50"
+       :class="{ 'bg-emerald-800': result === 'success', 'bg-rose-800': result === 'error'}"
        v-if="message !== ''">
       {{ message }}
     </p>
