@@ -78,7 +78,7 @@ const submitForm = async () => {
     <SectionHeading>
       Contact Me
     </SectionHeading>
-    <section class="py-12 flex justify-center relative">
+    <section class="px-12 flex justify-center relative">
       <form @submit.prevent="submitForm" method="post"
             class="flex flex-col gap-4 w-full md:w-2/3 lg:w-3/5 shadow-lg rounded-lg shadow-rose-950 bg-neutral-950 relative p-6 z-20">
         <label for="name">Name</label>
