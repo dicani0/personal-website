@@ -19,6 +19,15 @@ const submitForm = async () => {
   };
 
   try {
+    if (form.value.name === "" || form.value.email === "" || form.value.message === "") {
+      message.value = "Please fill in all fields.";
+
+      setTimeout(() => {
+        message.value = "";
+      }, 5000);
+
+      return;
+    }
 
     const res = await axios.post("https://formspree.io/f/mpzvkvbw", data);
 
@@ -50,6 +59,12 @@ const submitForm = async () => {
 </script>
 
 <template>
+  <transition name="slide-fade">
+    <p class="font-bold text-2xl fixed top-16 inset-x-0 bg-rose-950 p-4 ring-neutral-950 text-rose-300 text-center text-white transition ease-in-out delay-150 z-50"
+       v-if="message !== ''">
+      {{ message }}
+    </p>
+  </transition>
   <div class="container mx-auto px-4 min-h-dvh flex flex-col justify-center">
     <SectionHeading>
       Contact Me
@@ -58,18 +73,12 @@ const submitForm = async () => {
       <form @submit.prevent="submitForm" method="post"
             class="flex flex-col gap-4 w-full md:w-2/3 lg:w-3/5 shadow-lg rounded-lg shadow-rose-950 bg-neutral-950 relative p-6 z-20">
         <label for="name">Name</label>
-        <input v-model="form.name" class="p-4" type="text" name="name" placeholder="Your Name">
+        <input v-model="form.name" class="p-4" type="text" required name="name" placeholder="Your Name">
         <label for="email">Email</label>
-        <input v-model="form.email" class="p-4" type="email" name="email" placeholder="Your Email">
+        <input v-model="form.email" class="p-4" type="email" required name="email" placeholder="Your Email">
         <label for="message">Message</label>
-        <textarea v-model="form.message" class="p-4" name="message" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
-        <transition name="slide-fade">
-          <p class="font-bold text-4xl text-rose-300 text-center text-white transition ease-in-out delay-150"
-             v-if="message !== ''">
-            {{ message }}
-          </p>
-        </transition>
+        <textarea v-model="form.message" class="p-4" name="message" required placeholder="Your Message"></textarea>
+        <button class="rounded p-4 bg-rose-950 hover:bg-rose-800 transition duration-300" type="submit">Send</button>
       </form>
     </section>
   </div>

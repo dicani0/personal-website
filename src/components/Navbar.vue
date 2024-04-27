@@ -15,7 +15,6 @@ const sections = [
 
 const toggleNavbar = () => {
   isOpen.value = !isOpen.value;
-  console.log(isOpen.value);
 };
 
 </script>
